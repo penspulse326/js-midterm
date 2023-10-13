@@ -1,8 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.{html}"],
+  content: ["./*.html"],
   theme: {
-    extend: {},
+    fontFamily: {
+      robo: ["Roboto", "Noto Sans TC", "sans-serif"],
+    },
+    extend: {
+      backgroundImage: {
+        banner: "url('../images/banner.png')",
+      },
+      colors: {
+        primary: "#891818",
+      },
+    },
   },
   plugins: [],
 };
